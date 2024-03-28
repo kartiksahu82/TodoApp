@@ -1,0 +1,123 @@
+.main,body,html{
+  height: 100%;
+  width: 80%;
+  position: relative;
+  overflow: hidden !important;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/flagged/photo-1574885173944-c23db8159846?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwbWluaW1hbHxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+#colset {
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+.col {
+  padding: 1vh;
+  height: 50%;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 0px solid black;
+  border-radius: 11px;
+  transition: all ease-in-out 1s;
+  transition-duration: 0.2s;
+}
+
+.t1 {
+  margin: 3vh;
+  margin-left: 10vh;
+
+  font-size: 6vh;
+
+  min-width: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 2px 10px;
+  color: white;
+  text-align: center;
+  font-family: cursive;
+}
+
+
+#colset:nth-child(odd) {
+  background-color: rgb(46, 39, 101);
+}
+#colset:hover .col{
+  background-color: rgb(25, 17, 61);
+
+  cursor: pointer;
+}
+
+.non {
+  border: none;
+}
+.t2 {
+  min-width: 100px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .main,body,html {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  #colset {
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  .col {
+    padding: 0.5vh;
+    height: 50%;
+    width: 100%;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 4% 28% 28% 40%;
+    align-items: center;
+    border-top: 1px solid black;
+  }
+
+  .t1 {
+    margin: 1vh;
+    margin-left: 2vh;
+
+    font-size: 2vh;
+
+    min-width: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 2px 10px;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+
+  .t1:hover .t1 {
+    background-color: rgb(237, 217, 255);
+    cursor: pointer;
+  }
+
+  .non {
+    border: none;
+    margin-left: 4vh;
+  }
+  .t2 {
+    min-width: 120px;
+    text-align: center;
+  }
+}
