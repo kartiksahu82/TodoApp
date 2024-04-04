@@ -21,21 +21,19 @@ body {
 }
 
 .name {
-  text-align: left;
+  text-align:right;
   font-size: 10vh;
   padding: 3vh;
   color: rgb(246, 246, 246);
   width: 100%;
-  background-position: top;
-  font-family: cursive;
-  background-image: url(https://images.unsplash.com/photo-1710555331394-6f096f01f213?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D);
-  object-fit: contain;
-  background-size: contain;
+  background-position: center right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(https://plus.unsplash.com/premium_photo-1682202729809-e8894e4acd0a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  object-fit: cover;
+  background-size: cover;
 }
 
-.name img {
-  object-fit: contain;
-}
+
 .btn {
   min-width: 100px;
   min-height: 16px;
@@ -55,14 +53,15 @@ body {
   padding: 4vh;
   height: 100%;
   width: 100%;
-  background-color: rgb(87, 82, 98);
-  background-image: url(https://images.unsplash.com/photo-1711344209056-37639a63f70a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: rgb(1, 1, 1);
   flex-direction: row;
-  background-size: contain;
+  background-size: cover;
+  background-position: 0% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 60px;
+  margin-top: 2vh
 ;
 }
 
@@ -131,10 +130,10 @@ body {
   }
 
   .cont {
-    padding: 0.5vh 0.5vh;
+    padding: 1vh 1vh;
     width: 100%;
     font-size: 2vh;
-    background-color: rgb(17, 21, 88);
+    background-color: rgb(28, 28, 29);
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
